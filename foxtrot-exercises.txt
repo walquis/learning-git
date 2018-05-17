@@ -1,0 +1,52 @@
+Exercises for Foxtrot
+
+Simple, perhaps
+-----------------------------
+Task: Put the git aliases I used in class into a file where they are picked up when you open a new terminal window.  Probably, ~/.zshrc is the right place.  Note that you can type additional text after the alias.  For instance:
+
+$ gc -m "This is comment text for the commit I'm making".
+
+
+A little harder, maybe...
+-----------------------------
+Recalling that a branch is just a pointer to a SHA, and that we found a place in the .git directory where those pointers lived.
+
+Task:
+(1) Pick a SHA from your 'adog' history. 
+(2) Try to find that location again.
+  hint: the 'find' Unix command is incredibly handy: $ find .git -name some-file-name
+  hint 2: Recall that the master branch is implemented as a file named 'master'
+
+(3) see if you can create a branch pointing to the SHA you picked--but WITHOUT using the "git branch" command. 
+  hint: the branch pointer needs to point to the full SHA, not just an abbreviated SHA.
+  hint 2: 'git rev-parse a6a3fe2' will return the full SHA for the a6a3fe2 abbreviation.
+
+Does your branch show up in the 'adog' list?
+
+
+
+Challenge
+-----------------------------
+Recall that in class, I discovered that the 'addog' alias didn't work, because it included a non-existent path  ('/site/apps/git/bin/git').  The fix was to change that path to just 'git'.
+
+Your mission, should you choose to accept it:  First, fix that path in your own ~/.zsrhc.  Next, fix it in the .bash_profile file in the learnin-git repo, and commit it.  So far, so good.
+
+Here's the challenging part:  If you scroll down the 'adog' history (hit space bar once or twice), you'll come to this commit:
+
+41da974 Add 'addog' alias ('adog' with date)
+
+So, I did that awhile ago, but I clearly made a mistake.  I would like to first move the fix commit I just made so that it's next to the 41da974 commit.  Then, I would like to merge those commits together, so that it's as if the mistaken commit never happened.
+
+The tool to use is interactive rebase, aka 'rebase -i'.  I want to use it as described here:
+
+https://git-scm.com/book/id/v2/Git-Tools-Rewriting-History
+
+
+For starters, here is the command you'll run to do an interactive rebase:
+
+$ git rebase -i 0298c71
+
+(Note that 0298c71 is the commit *before* the commit you're interested in.)
+
+Slack me if questions!
+
