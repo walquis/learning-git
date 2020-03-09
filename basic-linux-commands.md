@@ -1,6 +1,6 @@
-# Prerequisite: Linux Commands and Linux/Bash Concepts To Know
+Some knowledge and experience with the following material will be very helpful going into the git class.
 
-## Linux Commands (roughly in decreasing order of importance for this course)
+## Basic Linux Commands
 * ls # and the -l, -a, -r, and -t options
 * pwd
 * cd
@@ -8,12 +8,11 @@
 * grep
 * mkdir
 * vim
-* ps  
+* ps
 
 ## Linux/Shell Concepts
-* Environment variables
+* Environment Variables
 * The PATH environment variable
 * ~/.bash_profile and ~/.bashrc
 * Standard Input, Standard Output, Standard Error
-* I/O redirection
-* Pipes
+* I/O Redirection and Pipes
