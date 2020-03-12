@@ -48,7 +48,7 @@ By the end of session 1, students will be able to...
 
 Git is a brilliantly simple data model surrounded by a dense constellation of commands and options.  Once you know the model, you know how the graph should look.  Then you are equipped to go shopping for the command that does want you want.
 
-See [Git Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects){:target=_blank}.
+See [Git Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects){:target="_blank"}.
 
 - __Commit__ and its attributes
 - __Tree__ and its attributes
@@ -58,7 +58,7 @@ See [Git Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects){:tar
 
 The word "reset" is loaded with so many connotations that it is nearly meaningless.  For the purposes of this session, you can read "reset" as "bring-into-aligment-with".  The bringing-into-alignment we'll do is with respect to a commit.  We'll explore how this works and how it's useful for managing local changes.
 
-See [Reset Demystified](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified){:target=_blank}.
+See [Reset Demystified](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified){:target="_blank"}.
 
 - HEAD (or something that will become HEAD).
 - Index
