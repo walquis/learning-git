@@ -2,7 +2,7 @@
 
 In this hands-on, two-session course, we will cover the essence of git, laying a foundation for making you productive in a professional environment, regardless of the specific workflow in use.
 
-Growing tired of the memorizing-magic-spells approach to git, I was personally motivated to learn the basics of git "once and for all".
+Growing weary of the memorizing-magic-spells approach to git, I was personally motivated to learn the basics of git "once and for all".
 
 I've taught this material to every CodePlatoon cohort since Bravo. Several graduates have reported that, equipped with a firm grasp of these basics, they have gone on to become go-to resources for git knowledge in their teams.
 
