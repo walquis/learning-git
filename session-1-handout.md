@@ -1,17 +1,13 @@
-# Student Handout
+# Student Handout - Session 1
 
-## Agenda - Session 1
+## Agenda
 1. Intro & Setting Up Your Environment
 1. Basic Linux & Shell
 1. Git Data Model - The Three Objects
 1. Managing Local Changes - The Three Trees
+1. Git vs Github - Know the difference
 
 ## Intro & Setting up your environment
-
-
-
-## Basic Linux & Shell
-Review the [Basic Linux and Shell](basic-linux-commands) prework.
 
 ### Clone the learning-git repo
 ```
@@ -42,6 +38,9 @@ $ ./git-aliases.sh   # Activate aliases in current shell
 $ ./append-aliases-to-profile.sh  # So they'll be part of future shells.
 $ adog  # This should work now.
 ```
+
+## Basic Linux & Shell
+Review the [Basic Linux and Shell](basic-linux-commands) prework.
 
 ## Exploring the git repo - SHAs and objects
 
