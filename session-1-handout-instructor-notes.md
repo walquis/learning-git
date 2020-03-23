@@ -1,4 +1,14 @@
 # Instructor Notes
+
+Keep the [Session 1 Syllabus](syllabus-session-1) in mind, to make sure you've covered the terms and concepts listed there.
+
+Themes:
+- Git has your back.  (We'll see that most git-repo mistakes are recoverable)
+  - Helps you keep a known good point for reference.
+  - Lets you boldly try new things.
+- If you're gonna do software: Know the bash command line, know git, and know Vim.
+- 
+
 ### Clone the learning-git repo
 - !$
 - -p option to mkdir
