@@ -13,21 +13,18 @@ Review [Prework](prework-and-references) for Session 1.
 ### Goals
 
 1. Understand the git data model (__The Three Objects__) well enough to describe a git commit in terms of its objects.
-1. Understand the local state of your latest changes well enough to move them between __The Three Trees__ with basic git commands such as 'git add', 'git commit', and 'git reset' .
+1. Understand the local state of your latest changes well enough to move them between __The Three Trees__ with basic git commands such as 'git add', 'git commit', and 'git reset'.
  
 ### Objectives
 
 By the end of session 1, students will be able to...
 
-#### Explain these terms:
+#### Explain these terms and concepts:
 * sha
 * content-addressable filesystem
 * blob, tree, commit
-* remote
-* fetch vs. pull
-* index
+* workspace, index, HEAD
 * symbolic ref
-* 'detached HEAD' state
  
 #### Use these commands, and understand them in terms of the 3 objects/3 trees:
 * git add
