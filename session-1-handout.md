@@ -1,14 +1,17 @@
-# Agenda - Session 1
+# Student Handout
+
+## Agenda - Session 1
+1. Intro & Setting Up Your Environment
 1. Basic Linux & Shell
-1. Intro & Environment Setup
-1. Exploring a git repo - The Three Objects
-1. 10-minute break
-1. The Three Trees
+1. Git Data Model - The Three Objects
+1. Managing Local Changes - The Three Trees
 
-# Basic Linux & Shell
-Review prework: [Basic Linux and Shell](basic-linux-commands)
+## Intro & Setting up your environment
 
-## Setting up your environment
+
+
+## Basic Linux & Shell
+Review the [Basic Linux and Shell](basic-linux-commands) prework.
 
 ### Clone the learning-git repo
 ```
@@ -125,7 +128,7 @@ Sometimes it's necessary to bring changes the other way--for instance, when you 
 ```git reset```: The command that can assist with all this and more.  Why is it called "reset"?  Possibly because it resets trees to a state that already exists in the repo.  Unlike ```git add``` and ```git commit```, which push new states __into__ the repo, ```git reset``` pulls existing state the other way, __out__ of the repo, and into one or more of HEAD, the index, and even the workspace.
 
 | Tree | Role | ```git reset``` "hardness"<br>needed to move the tree
-| ---- | ---- | ---- 
+| ---- | ---- | ----
 | HEAD | The latest commit | \--soft
 | Index | The commit-in-progress | \--mixed (also moves HEAD.) The default.
 | Workspace | Your local filesystem | \--hard (also moves HEAD and Index.)
@@ -140,7 +143,7 @@ If you just type "git reset", the default hardness is "\--mixed", and the defaul
 
 Let's follow a file through its lifecycle, starting with workspace changes, which will flow through the index, and into a commit.  Then, we'll revert it, tree by tree, all the way back using ```git reset```.
 
-### Move a change forward through the trees
+### 1. Move a change forward through the trees
 
 Make a change (which tree are you working in now?) ...
 ```
@@ -168,14 +171,18 @@ $ git status
 
 Now which tree (or trees) have the change?
 
-### Move same change backward through the trees
+### 2. Move the same change backward through the trees
 
-Recall that besides "hardness", we need to tell ```git reset``` the SHA to align with--that is, to reset to.
+Recall that besides specifying "hardness", we need to tell ```git reset``` the SHA to align with--that is, which SHA to reset to.
 
 (What is the previous value of HEAD?)
 ```
-$ git reset    # What happened?  Why?
+$ git rev-parse HEAD
+$ git reset
+$ git rev-parse HEAD   # What happened?  Why?
+$ git status
 $ git reset --soft <previous-value-of-head>
+$ git rev-parse HEAD
 $ git status
 ```
 
@@ -197,6 +204,6 @@ $ git reset --hard
 $ git status
 ```
 
-Test your understanding: Describe what happened.
+Test your understanding: What happened to each tree at each step?
 
 

@@ -1,3 +1,4 @@
+# Instructor Notes
 ### Clone the learning-git repo
 - !$
 - -p option to mkdir

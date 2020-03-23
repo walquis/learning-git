@@ -8,7 +8,7 @@ We will learn git's data model, consisting of three objects.  We will learn git'
 
 ## Prerequisites
 
-Review [Prework and References](prework-and-references) for Session 1.
+Review [Prework](prework-and-references) for Session 1.
 
 ### Goals
 
