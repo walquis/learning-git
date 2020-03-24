@@ -128,16 +128,9 @@ $ git cat-file -t 41c3
 blob
 ```
 
-So there they are:  __The Three Objects__.  __commit__, __tree__, and __blob__. How do they work in practice?
+Consider this [object diagram](https://git-scm.com/book/en/v2/images/data-model-3.png){:target="_blank"}.  What SHAs from your repo (whether commit, tree, or blob) would correspond to this diagram's latest commit?
 
-What if we were to add ```hi.txt``` to the repo?
-```
-$ git add hi.txt
-$ git commit -m "Adding a file to the repo"
-```
-Examine the new commit using ```git cat-file -p```...
-
-Consider this [object diagram](https://git-scm.com/book/en/v2/images/data-model-3.png){:target="_blank"}.  What would a diagram of your repo's last 2 commits look like?
+So there they are:  __The Three Objects__.  __commit__, __tree__, and __blob__. Next up: How do they work in practice?
 
 ## The Three Trees - HEAD, Index, Workspace
 
