@@ -2,7 +2,7 @@
 
 ## Overview
 
-Having learned how to package local changes into git's Three Objects and move them among the Three Trees, we now move up a level:  Using those tools to communicate about changes effectively with our team and our Future Selves.
+Having learned how to package local changes into git's Three Objects and move them among the Three Trees, we now move up a level.  In Session Two, we will use git to smoothly swap changes with our team and our Future Selves.
 
 ## Prerequisites
 
@@ -10,9 +10,9 @@ Review [Prework and References](prework-and-references) for Session 2.
 
 ## Goals
 
-1. Gain a deeper understanding of what previously used git commands are accomplishing.
+1. Gain a deeper understanding of what familiar git commands (such as 'git merge') are accomplishing.
 1. Know how your chosen workflow should change the commit graph, and use git commands to make it so.
-1. Make changes with confidence that git has your back.
+1. Gain confidence to make changes knowing that git has your back.
 
 ## Objectives
 
@@ -25,15 +25,23 @@ By the end of session 2, students will be able to...
 * fast-forward merge
 * 'detached HEAD' state
 
+### Use these commands in appropriate context:
+* git branch
+* git merge
+* git stash
+* git cherry-pick
+* git rebase -i
+* git bisect
 
-## Workflows
+## Some (but not all) Common Workflows
 
-### Branch/Merge
+### "Whoops, forgot to 'git pull' before committing and pushing"
 
-### Merge collisions
-- Resolve merge collision on a git pull.
-  - Chris push up changes to specific file, and class change same line in same file, and attempt to 'git pull'.
+How to fix it without a confusing, purposeless merge in your graph: Use [git cherry-pick](https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Patching){:target="_blank"}.
 
+### Resolve Merge Collision
+
+A walk through a typical merge collision; understanding what git is saying, and how to resolve the collision correctly.
 
 ### Fix branch - "Whoops, I've committed my stuff on the wrong branch!"
 
@@ -43,9 +51,8 @@ By the end of session 2, students will be able to...
 
 ### "I only want to bring in one commit" - [git cherry-pick](https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Patching){:target="_blank"}
 
-### "Whoops, forgot to do a 'git pull' before committing" - Also [git cherry-pick](https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Patching){:target="_blank"}
-- Could merge, but clutters up history with a confusing trail.
-
 ### "I need to clean up my commit history before I push" - [git rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing){:target="_blank"}
 
 ### "I need to find the commit where a bug got into my git repo" - [git bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git){:target="_blank"}
+
+You can follow along in the [Session 2 Student Handout](session-2-handout).
