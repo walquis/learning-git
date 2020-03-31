@@ -7,12 +7,10 @@ Themes:
   - Helps you keep a known good point for reference.
   - Lets you boldly try new things.
 - If you're gonna do software: Know the bash command line, know git, and know Vim.
-- 
 
 ### Clone the learning-git repo
 - !$
 - -p option to mkdir
-- git vs https protocol
 
 ### Unpack the git objects that Github.com has packed
 - directories starting with '.'

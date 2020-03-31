@@ -61,4 +61,5 @@ See [Reset Demystified](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystifi
 - Index
 - Workspace
 
+<hr>
 You can follow along in the [Session 1 Student Handout](session-1-handout).

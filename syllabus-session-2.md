@@ -35,7 +35,7 @@ By the end of session 2, students will be able to...
 
 ## Some (but not all) Common Workflows
 
-### "Whoops, forgot to 'git pull' before committing and pushing"
+### Forgot to 'git pull' Before Committing and Pushing"
 
 How to fix it without a confusing, purposeless merge in your graph: Use [git cherry-pick](https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Patching){:target="_blank"}.
 
@@ -43,16 +43,25 @@ How to fix it without a confusing, purposeless merge in your graph: Use [git che
 
 A walk through a typical merge collision; understanding what git is saying, and how to resolve the collision correctly.
 
-### Fix branch - "Whoops, I've committed my stuff on the wrong branch!"
+### Fix branch
 
-### "I need to save what I'm working on and come back to it later" - [git stash](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning){:target="_blank"}
+"Whoops, I've committed my stuff on the wrong branch!"
 
-### "I need to pull in changes from another branch" - [git merge](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merging){:target="_blank"}
+This is a case of making the graph look like you want it.  Use 'git branch' and 'git reset' to put your changes where they should go, and restore the branch to what it should be.  For instance...
 
-### "I only want to bring in one commit" - [git cherry-pick](https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Patching){:target="_blank"}
+```
+# Make some changes on master, add/commit.  Repeat.
+$ git checkout -b myChanges
+$ git reset --hard origin/master  # Assuming that's where you started.
+```
 
-### "I need to clean up my commit history before I push" - [git rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing){:target="_blank"}
+### Save Current Work And Return to it Later 
 
-### "I need to find the commit where a bug got into my git repo" - [git bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git){:target="_blank"}
+"I need to save what I'm working on and come back to it later" - [git stash](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning){:target="_blank"}
 
+### Clean Up Commit History Before Pushing - [git rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing){:target="_blank"}
+
+### Find a Bad Commit - [git bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git){:target="_blank"}
+
+<hr>
 You can follow along in the [Session 2 Student Handout](session-2-handout).
