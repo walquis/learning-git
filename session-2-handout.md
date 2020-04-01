@@ -66,6 +66,7 @@ $ git show # How about the .gitignore change?
 1. Make a change that will collide (i.e., to line 45 in .gitignore).
 1. Attempt to merge from master.
 ```
+$ git config --global core.editor "code --wait"  # Set your editor to vscode
 $ git merge master
 Auto-merging .gitignore
 CONFLICT (content): Merge conflict in .gitignore
@@ -99,7 +100,6 @@ This is another instance of using git to practice good communication skills.  No
 Let's make a series of commits we don't want people to see...suppose we tweak test.sh to look for 'twentieth' instead of 'Wallace', just one line, and print out to the screen.
 
 ```
-$ git config --global core.editor "code --wait"  # Set your editor to vscode
 $ git rebase -i some-commit-prior-to-commits-to-fix
 ```
 
