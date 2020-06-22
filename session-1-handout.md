@@ -77,7 +77,7 @@ c363195bb36c6cc7bf185ef4ee2f4f1160bb14
 da9747be679144276d174aad5477ee87b2de39
 $ git cat-file -p 41c3  # Don't need to say the whole sha
 hi-there
-$ git cat-file -t 41c3 
+$ git cat-file -t 41c3
 blob
 ```
 
@@ -95,7 +95,7 @@ Test your understanding: Describe the relationship between a SHA and a git repo 
 ```
 $ cd .git
 $ ls -l
-$ file HEAD 
+$ file HEAD
 HEAD: ASCII text
 $ cat HEAD
 ref: refs/heads/master
@@ -134,7 +134,11 @@ $ git cat-file -t 41c3
 blob
 ```
 
-Consider this [object diagram](https://git-scm.com/book/en/v2/images/data-model-3.png){:target="_blank"}.  What SHAs from your repo (whether commit, tree, or blob) would correspond to this diagram's latest commit?
+Consider this git object diagram, courtesy of git-scm.com:
+
+![](https://git-scm.com/book/en/v2/images/data-model-3.png "Git Data Model")
+
+What SHAs from your repo (whether commit, tree, or blob) would correspond to this diagram's latest commit?
 
 So there they are:  __The Three Objects__.  __commit__, __tree__, and __blob__. Next up: How do they work in practice?
 
@@ -154,7 +158,9 @@ On the 'green path' (that is, no mistakes or side journeys), changes start in th
 | --- | ---- | ---- |
 | __Operation:__ | \<edit file\> | ```git add``` | ```git commit```
 
-See also [this object diagram](https://git-scm.com/book/en/v2/images/reset-workflow.png){:target="_blank"}.
+See also this workflow diagram, from git-scm.com:
+
+![](https://git-scm.com/book/en/v2/images/reset-workflow.png)
 
 Sometimes it's necessary to bring changes the other way--for instance, when you need to add a forgotten file, change a commit message, or revert a commit.
 
@@ -224,7 +230,7 @@ $ git diff
 $ git diff --staged
 ```
 
-\* See [Git Revisions](https://git-scm.com/docs/revisions){:target="_blank"}.
+\* To understand ^, ~, @{push}, and other revision notation, see [Git Revisions](https://git-scm.com/docs/revisions){:target="_blank"}.
 
 What happened?  What is ```git status``` telling you, and why?
 
