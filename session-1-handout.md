@@ -1,3 +1,9 @@
+<style>
+  td { text-align: center; }
+  tr.bb { border-bottom: 2px solid black !important; }
+  .bb table { border-collapse:collapse; }
+</style>
+
 # Student Handout - Session 1
 
 ## Agenda
@@ -248,6 +254,17 @@ Test your understanding:
 - What happened to each tree at each step?
 - How is ```git reset <paths>``` the opposite of ```git add <paths>```?
 - When would each variation of ```git reset``` come in handy?
+
+### Another picture of how ```"git reset --soft/mixed/hard <ToThisCommit>"``` &nbsp;works
+
+<!-- Github Markdown doesn't do colspan -->
+<table class="bb">
+<tr><th>"hardness"</th><th colspan="3">Trees that are reset &lt;ToThisCommit&gt;</th></tr>
+<tr class="bb"><th></th><th>Workspace</th><th>Index</th><th>HEAD</th></tr>
+<tr><td>--soft</td><td>-</td><td>-</td><td>YES</td></tr>
+<tr><td>--mixed</td><td>-</td><td>YES</td><td>YES</td></tr>
+<tr><td>--hard</td><td>YES</td><td>YES</td><td>YES</td></tr>
+</table>
 
 ## Git versus Github
 
